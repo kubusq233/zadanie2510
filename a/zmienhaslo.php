@@ -28,6 +28,7 @@
 			$z2 = "UPDATE uzytkownik SET haslo='$h2' WHERE LOGIN = '$l'";
 			$zm = mysqli_query($p, $z2);
 			echo "Zmieniono haslo";
+			header("location: logowanie.php");
 		}
 	else
 		{
